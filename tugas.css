@@ -1,0 +1,9 @@
+body{
+    background: linear-gradient(120deg, rgba(34, 193, 195, 1) 20%, rgba(175, 253, 45, 1) 86%);
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+#coba-id{
+    text-align: center;
+}

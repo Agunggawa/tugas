@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tugas.css">
+    <title>BELAJAR HTML DAN CSS</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 50px;
+           
+        }
+        
+        .pengumuman{
+            display: flex;
+            justify-content: center;
+            gap: 75px;
+            margin-top: 50px;
+            
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            background-color: transparent;
+            border-radius: 8px;
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        table, th,td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        table:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        th{
+            background-color: #ffffff;
+            text-align: center; 
+        }
+        ul.bullet-style li{
+            list-style-type: disc;
+            padding: 10px 0;
+            color: #000000;
+            font-size: 18px;
+            width: 200px;
+            text-align: center;
+        }
+        ol.number-sttyle li{
+            list-style-type: decimal;
+            padding: 10px 0;
+            color: #000000;
+            font-size: 18px;
+            width: 200px;
+            text-align: center;
+        }
+        .kalimat{
+            text-align: center;
+        }
+        .garis{
+            width: 75%;
+            height: 10px;
+            background-color: rgb(45, 81, 75);
+            border: none;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(31, 30, 30, 0.5);
+        }
+        .kotak {
+            border: none;
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.5) ;
+        }
+        .kotak-pengumuman{
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px  rgba(34, 33, 33, 0.5) ;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .kotak-pengumuman:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        </style>
+</head>
+<body>
+    <!-- memberikan kelas kalimat -->
+    <div class="kalimat">
+    <h1>Daftar Peserta Dan Juara</h1>
+    <!-- pada hr di berikan kelas "garis" -->
+    <hr class="garis">
+    <h3>HTML</h3>
+</div>
+    <!-- memberikan kelas container -->
+    <div class="container">
+        <div>
+            <!-- memberikan css inline dimana kalimat "Kelompok 1 akan berada di tengah" -->
+            <h2 style="text-align: center;">Kelompok 1</h2> 
+            <div>
+                <!-- memberikan kelas pada tabel dengan nama kelas "kotak" -->
+                <table class="kotak">
+                    <thead> 
+                        <tr>
+                        <th>Nomor</th>
+                        <th>Nama</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Alisya Soebandono </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Amanda Schogel</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sherina</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <div>
+         <!-- memberikan css inline dimana kalimat "Kelompok 2 akan berada di tengah" -->
+        <h2 style="text-align: center;">Kelompok 2</h2>
+        <div>
+        <!-- memberikan kelas pada tabel dengan nama kelas "kotak" -->
+        <table class="kotak">
+            <thead> 
+                <tr>
+                <th>Nomor</th>
+                <th>Nama</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mark Zuckerberg </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Elon Musk</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+    </div>
+
+    <!-- memberikan kelas pada layout selanjutnya dengan nama "pengumuman" -->
+    <div class="pengumuman">
+        <div>
+            <!-- memberikan kelas di h3 dengan nama kelasnya "kalimat" -->
+            <h3 class="kalimat">Juara Lomba Pidato</h3>
+            <!-- membuat layout baru dan memberikan kelas dengan nama "kotak-pengumuman" -->
+            <div class="kotak-pengumuman">
+                <!-- membuat or (order list) dan memberikan kelas dengan nama "" -->
+                <ol class="number-sttyle">
+                    <li>Sherina</li>
+                    <li>Alisya Soebandono</li>
+                    <li>Amanda Schogel</li>
+                </ol>
+            </div>
+        </div>
+        <div>
+        <h3 class="kalimat">Juara Lomba Programming</h3>
+            <div class="kotak-pengumuman">    
+                <ul class="bullet-style">
+                    <li>Mark Zuckerberg</li>
+                    <li>Bill Gates</li>
+                    <li>Elon Musk</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="garis">
+</body>
+</html>
